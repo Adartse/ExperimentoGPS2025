@@ -5,37 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios de clase a realizar con LEIA</title>
     <link rel="stylesheet" href="../estilos.css">
+    <script src="../js/scripts.js"></script>
 </head>
 <body>
-    <header>Ejercicio 1 - A realizar con LEIA</header>
+    <div id="header-placeholder"></div>
+
     <main>
+        <h2><B>EJERCICIO 1 - A realizar con LEIA</B></h2><br>
+        
         <div class="content">
             <div class="item">
-                <p><strong>Identificador del ejercicio:</strong> LEIA_CLASE_001</p>
-                <p><strong>Descripción:</strong> Se le ha contratado para identificar el flujo de trabajo que hay detrás del proceso de solicitud de préstamos de una institución financiera llamada «BrightStone Lending Group». El proceso gestiona la evaluación de una solicitud de préstamo desde la solicitud inicial del cliente hasta la notificación de aceptación o rechazo. Su tarea consiste en modelar este proceso empresarial utilizando BPMN mediante una entrevista con Maxine Mazatzin, directora de operaciones de la empresa. 
-				No es necesario especificar los recursos (humanos o del sistema) que participan en el proceso.</p>
-                <p><strong>Código del ejericio:</strong><b> <font color="red">TO_BE_MODIFIED</font></p>
+                <p><strong>Identificador del ejercicio:<font color="red"> LEIA_CLASE_001</font></strong></p>
+                
+                <p><strong>Código del ejericio: <font color="red">TO_BE_MODIFIED</font></strong></p>
+
+                <p><strong>Descripción:</strong> Se le ha contratado para identificar el flujo de trabajo que hay detrás del proceso de solicitud de préstamos de una institución financiera llamada «BrightStone Lending Group». El proceso gestiona la evaluación de una solicitud de préstamo desde la solicitud inicial del cliente hasta la notificación de aceptación o rechazo. 
+                <br><br>Su tarea consiste en modelar este proceso de negocio utilizando BPMN mediante una entrevista con Maxine Mazatzin, directora de operaciones de la empresa. 
+				No es necesario especificar los recursos (humanos o del sistema) que participan en el proceso.
+                </p>
+                <br>
 				
 				
                 <p><strong>Enlace de acceso a la LEIA:</strong> <a href="www.google.com" target="_blank">TO_BE_MODIFIED</a></p>
             </div>
+
+            <p><br><br></p>
 			
 			<div class="contenedor-margen">
-			    <button class="boton-izquierda" onclick="volver()"> << Volver</button>
-				<button class="boton-derecha" onclick="siguienteEjercicio()">Ir a Ejercicio de Clase 2</button>
+			    <button class="boton-izquierda" onclick="irInicio()"> << Volver</button>
+				<button class="boton-derecha" onclick="siguienteEjercicio('LEIA_ejer_clase02.html')">Ir a Ejercicio de Clase 2</button>
 			</div>
 			
         </div>
     </main>
+    
+    <p><br></p>
 
-    <script>
-        function siguienteEjercicio() {
-            window.location.href = 'LEIA_ejer_clase02.html';
-        }
-		
-		function volver() {
-            window.location.href = '../root.html';
-        }
-    </script>
+    <div id="footer-placeholder"></div>
+
 </body>
 </html>

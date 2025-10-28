@@ -5,37 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios extra a realizar con LEIA</title>
     <link rel="stylesheet" href="../estilos.css">
+    <script src="../js/scripts.js"></script>
 </head>
 <body>
-    <header>Ejercicio extra 1 - A realizar con LEIA</header>
+    <div id="header-placeholder"></div>
+    
     <main>
+        <h2><B>EJERCICIO EXTRA 1 - A realizar con LEIA</B></h2><br>
+
         <div class="content">
             <div class="item">
-                <p><strong>Identificador del ejercicio:</strong> LEIA_EXTRA_001</p>
-                <p><strong>Descripción:</strong> Se le ha contratado para identificar el flujo de trabajo que hay detrás del proceso de gestión de pedidos especiales de muebles en «GreenCraft Furniture Company». Los pedidos especiales de muebles son aquellos que requieren una fabricación a medida. Su tarea consiste en modelar este proceso empresarial utilizando BPMN mediante entrevistas a Maxine Mazatzin, directora general de la empresa. 
-				No es necesario especificar los recursos (humanos o del sistema) que intervienen en el proceso.</p>
-                <p><strong>Código del ejericio:</strong><b> <font color="red">TO_BE_MODIFIED</font></p>
+                <p><strong>Identificador del ejercicio:<font color="red"> LEIA_EXTRA_001</font></strong></p>
+
+                <p><strong>Código del ejericio:<font color="red"> TO_BE_MODIFIED</font></strong></p>
 				
+                <p><strong>Descripción:</strong> Se le ha contratado para identificar el flujo de trabajo que hay detrás del proceso de gestión de pedidos especiales de muebles en «GreenCraft Furniture Company». Los pedidos especiales de muebles son aquellos que requieren una fabricación a medida. 
+                    <br><br>Su tarea consiste en modelar este proceso de negocio utilizando BPMN mediante entrevistas a Maxine Mazatzin, directora general de la empresa. 
+				    No es necesario especificar los recursos (humanos o del sistema) que intervienen en el proceso.
+                </p>
+                <br>
+                
 				
                 <p><strong>Enlace de acceso a la LEIA:</strong> <a href="www.google.com" target="_blank">TO_BE_MODIFIED</a></p>
             </div>
+
+            <p><br><br></p>
 			
 			<div class="contenedor-margen">
-			    <button class="boton-izquierda" onclick="volver()"> << Volver a Ejercicio de Clase 2</button>
-				<button class="boton-derecha" onclick="siguienteEjercicio()">Ir a Ejercicio Extra 2</button>
+                <button class="boton-izquierda" onclick="volver('LEIA_ejer_clase02.html')"> << Volver a Ejercicio de Clase 2</button>
+                <button class="boton-central" onclick="irInicio()"> Inicio </button>
+                <button class="boton-derecha" onclick="siguienteEjercicio('LEIA_ejer_extra02.html')">Ir a Ejercicio Extra 2</button>
+
 			</div>
 			
         </div>
     </main>
 
-    <script>
-        function siguienteEjercicio() {
-            window.location.href = 'LEIA_ejer_extra02.html';
-        }
-		
-		function volver() {
-            window.location.href = 'LEIA_ejer_clase02.html';
-        }
-    </script>
+    <p><br></p>
+
+    <div id="footer-placeholder"></div>
+
+
 </body>
 </html>

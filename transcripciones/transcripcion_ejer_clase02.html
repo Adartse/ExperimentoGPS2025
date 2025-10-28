@@ -5,33 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios de clase a realizar con transcripciones de entrevistas</title>
     <link rel="stylesheet" href="../estilos.css">
+    <script src="../js/scripts.js"></script>
 </head>
 <body>
-    <header>Ejercicio 2 - A realizar con transcripciones de entrevistas</header>
+    <div id="header-placeholder"></div>
+    
     <main>
+        <h2><B>EJERCICIO 2 - A realizar con transcripciones de entrevistas</B></h2><br>
+        
         <div class="content">
             <div class="item">
-                <p><strong>Identificador del ejercicio:</strong> TEXT_CLASE_002</p>
-                <p><strong>Descripción: TO_BE_MODIFIED</strong> </p>
+                <p><strong>Identificador del ejercicio: <font color="red">TEXT_CLASE_002</font></strong></p>
+
+                <p><strong>Descripción: <font color="red">TO_BE_MODIFIED</font></strong> </p>
+
+                <br>
+
                 <p><strong>Enlace de acceso a la transcripción de la entrevista:</strong> <a href="www.google.com" target="_blank">TO_BE_MODIFIED</a></p>
             </div>
 			
+            <p><br><br></p>
+
 			<div class="contenedor-margen">
-			    <button class="boton-izquierda" onclick="volver()"> << Volver a Ejercicio de Clase 1</button>
-				<button class="boton-derecha" onclick="siguienteEjercicio()">Ir a Ejercicio Extra 1</button>
+			    <button class="boton-izquierda" onclick="volver('transcripcion_ejer_clase01.html')"> << Volver a Ejercicio de Clase 1</button>
+				<button class="boton-central"  onclick="irInicio()"> Inicio </button>
+                <button class="boton-derecha" onclick="siguienteEjercicio('transcripcion_ejer_extra01.html')">Ir a Ejercicio Extra 1</button>
 			</div>
 			
         </div>
     </main>
 
-    <script>
-        function siguienteEjercicio() {
-            window.location.href = 'transcripcion_ejer_extra01.html';
-        }
-		
-		function volver() {
-            window.location.href = 'transcripcion_ejer_clase01.html';
-        }
-    </script>
+    <p><br></p>
+
+    <div id="footer-placeholder"></div>
+
 </body>
 </html>

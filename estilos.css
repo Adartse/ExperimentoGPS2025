@@ -1,11 +1,12 @@
-body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        html, body {
+            font-family: Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #f0f2f5;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 100%;
         }
 
         header {
@@ -17,6 +18,15 @@ body {
             font-size: 2em;
             font-weight: bold;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .site-header, .site-footer {
+            width: 100vw; /* ocupa todo el ancho visible */
+            box-sizing: border-box;
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1rem;
         }
 
         main {
@@ -73,8 +83,50 @@ body {
 		
 		.contenedor-margen {
 		  display: flex;
+          justify-content: space-between; /* coloca los botones extremos a los bordes */
+            align-items: center;
+            padding: 1rem;
 		}
+
+        .boton-central {
+          margin-left: auto;
+          margin-right: auto;
+        }
 
 		.boton-derecha {
 		  margin-left: auto; /* Empuja este botón hasta el final */
 		}
+
+
+
+
+        .seccion-boton {
+        background-color: #eaf0f8;
+        padding: 1.5rem 0;
+        text-align: center;
+        }
+
+        .seccion-boton p {
+        margin: 0 0 1rem;
+        font-size: 1.1rem;
+        }
+
+        .seccion-boton button {
+        background-color: #003366;
+        color: white;
+        border: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1rem;
+        }
+
+        .seccion-boton button:hover {
+        background-color: #0055aa;
+        }
+
+
+
+
+
+

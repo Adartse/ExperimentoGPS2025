@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experimento GPS 2025</title>
 	<link rel="stylesheet" href="estilos.css">
-    <script src="../js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
 
     <div id="header-placeholder"></div>
-
+    
     <main>
         <div class="content">
 			<p >El objetivo de esta actividad es practicar la identificación, análisis y modelado de un proceso de negocio a partir de información no estructurada, como la entrevista con un participante del proceso o la transcripción de la misma.</p>
@@ -33,28 +33,5 @@
 
     <div id="footer-placeholder"></div>
 
-    <script>
-        cargarFragmento("header-placeholder", "componentes/header.html");
-        cargarFragmento("footer-placeholder", "componentes/footer.html");
-
-        function redirigir() {
-            const radios = document.getElementsByName('opcion');
-            let seleccion = null;
-            for (const radio of radios) {
-                if (radio.checked) {
-                    seleccion = radio.value;
-                    break;
-                }
-            }
-
-            if (seleccion === 'transcripcion') {
-                window.location.href = 'transcripciones/transcripcion_ejer_clase01.html';
-            } else if (seleccion === 'leia') {
-                window.location.href = 'leias/LEIA_ejer_clase01.html';
-            } else {
-                alert('Por favor seleccione una opción.');
-            }
-        }
-    </script>
 </body>
 </html>

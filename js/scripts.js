@@ -12,39 +12,14 @@ async function cargarFragmento(id, archivo) {
         const contenido = await respuesta.text();
         contenedor.innerHTML = contenido;
     } catch (error) {
-        console.error(`❌ No se pudo cargar el fragmento: ${error.message}`);
+        console.error(`No se pudo cargar el fragmento: ${error.message}`);
     }
-}
-
-// 🔹 Detectar ruta base dinámica (funciona en GitHub Pages y localmente)
-function obtenerRutaBase() {
-    const path = window.location.pathname;
-    const repo = "ExperimentoGPS2025"; // nombre exacto del repositorio
-
-    // Divide la ruta en partes
-    const partes = path.split("/").filter(Boolean); // elimina vacíos
-
-    // Busca si el repositorio está en la ruta (en GitHub Pages)
-    const indiceRepo = partes.indexOf(repo);
-    let profundidad = 0;
-
-    if (indiceRepo !== -1) {
-        // cuántas carpetas hay dentro del repo después del nombre
-        profundidad = partes.length - indiceRepo - 1;
-    } else {
-        // si no está (por ejemplo, corriendo localmente)
-        profundidad = partes.length - 1;
-    }
-
-    // construye la ruta base correcta
-    return "../".repeat(profundidad);
 }
 
 // 🔹 Cargar header y footer cuando el DOM esté listo
 document.addEventListener("DOMContentLoaded", () => {
-    const base = obtenerRutaBase();
-    cargarFragmento("header-placeholder", `${base}componentes/header.html`);
-    cargarFragmento("footer-placeholder", `${base}componentes/footer.html`);
+    cargarFragmento("header-placeholder", `../componentes/header.html`);
+    cargarFragmento("footer-placeholder", `../componentes/footer.html`);
 });
 
 // 🔹 Funciones de navegación
@@ -57,8 +32,7 @@ function volver(destino) {
 }
 
 function irInicio() {
-    const base = obtenerRutaBase();
-    window.location.href = `${base}index.html`;
+    window.location.href = `../index.html`;
 }
 
 // 🔹 Función para redirigir según selección (para index.html)

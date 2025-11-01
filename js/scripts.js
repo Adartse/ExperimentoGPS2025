@@ -35,6 +35,10 @@ function irInicio() {
     window.location.href = `../index.html`;
 }
 
+function irAPostInicio() {
+    window.location.href = `indexpost.html`;
+}
+
 // 🔹 Función para redirigir según selección (para index.html)
 function redirigir() {
     const radios = document.getElementsByName('opcion');

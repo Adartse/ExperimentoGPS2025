@@ -23,11 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // 🔹 Funciones de navegación
-function siguienteEjercicio(destino) {
-    window.location.href = destino;
-}
-
-function volver(destino) {
+function irA(destino) {
     window.location.href = destino;
 }
 
